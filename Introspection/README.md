@@ -2,7 +2,7 @@
 
 Hello 👋!
 
-##**Introduction about yourself (previous experiences and achievements if any)**<br>
+##Introduction about yourself (previous experiences and achievements if any)<br>
 	I'm excited to introduce myself to the dynamic members of this esteemed technity club.I'm Guruprasad, and I come with a passion for innovation and a drive to make a meaningful impact. I'm no stranger to the world of technology and programming, I have some previous experiences in C, Java, HTML, CSS, Javascript.<br><br>
 
 
