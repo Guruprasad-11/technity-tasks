@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance Tour</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            position: relative;
+            margin: 0;
+            padding: 0;
+            top: 0px;
+            left: 0px;
+            background-color: #2c2c2c;
+        }
+        h1{
+            font-family: "Oswald";
+        }
+        p{
+            font-family: "Montserrat";
+        }
+        
+        /* ---Page 1---*/
+        .page1{
+            position: relative;
+            background-color: #000000;
+            background-image: url('Used Images/1.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100vh;
+            background-position: center center;
+            height: 100vh;
+        }
+        .main{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: #2c2c2c;
+            display: flex;
+            justify-content:center;
+            align-content: center;
+            align-items: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+            padding: 10px;
+        }
+        .navbar a{
+            text-decoration: none;
+            color: #ffffff;
+            padding-right: 50px;
+        }
+        .pg-1-center {
+            color: #ffffff;
+            position: absolute;
+            top: 60%;
+            left: 28%;
+            transform: translate(-72%, -40%);
+        }
+        .pg-1-center h1, .pg-1-center p{
+            margin: 0px;
+            padding: 0px;
+        }
+        .pg-1-center button{
+            background-color: #ff6309;
+            color: #ffffff;
+            border: 1px solid #ff6309;
+            border-radius: 5px;
+            font-family: Oswald;
+            font-size: 3vh;
+            padding: 10px;
+            width: 250px;
+        }
+        /* ---Page 2--- */
+        .page2{
+            height: 100vh;
+            padding: 20px;
+            text-align: center;
+            background-color: #ff6309;
+            color: #ffffff;
+        }
+        .Box1{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .item1
+        {
+            background-color: #2c2c2c;
+            color: #ffffff;
+            max-width: 320px;
+        }
+        .item1 img{
+            height: 270px;
+            width: 320px;
+        }
+        .item1 p{
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* ---Page 3---*/
+        .page3{
+            height: 100vh;
+            text-align: center;
+            background-color: #2c2c2c;
+            color: #ffffff;
+            padding: 20px;
+        }
+        .Box2{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .item2
+        {
+            background-color: #ff6309;
+            color: #ffffff;
+            max-width: 250px;
+            border-radius: 5px;
+            padding: 20px;
+        }
+        .item2 img{
+            height: 132px;
+            width: 112px;
+        }
+        .item2 p{
+            text-align: center;
+            padding: 10px;
+        }
+        .item2 button{
+            background-color: #2c2c2c;
+            color: #ffffff;
+            width: 250px;
+            border: 10px none #2c2c2c;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* ---Page 4--- */
+        .page4{
+            height: 100vh;
+            background-color: #ff6309;
+            color: #ffffff;
+            display: flex;
+        }
+
+        .page4 img{
+            min-width: 100%;
+            max-height: 100%;
+        }
+        .text1{
+            box-sizing: border-box;
+            max-width: 50%;
+            padding: 100px;
+        }
+        .text1 button{
+            font-family: "Oswald";
+            font-size: 3vh;
+            background-color: #2c2c2c;
+            color: #ffffff;
+            width: 300px;
+            border: 10px none #2c2c2c;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /*---Page 6---*/
+        .item
+        {
+            background-color: inherit;
+            color: #ffffff;
+            max-width: 250px;
+            padding: 20px;
+        }
+
+        .item h1, .item p{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /*---Page 7---*/
+        .bg-image {
+            position: relative;
+            background-image: url("Used Images/4.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 100vh;
+        }
+        .bg-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(118, 47, 6, 0.7);
+        }
+        .centered {
+            color: #ffffff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /*---Page 8---*/
+        #email{
+            display : flex;
+            align-items : center;
+       }
+       ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #9397b2;
+            font-size: large;
+            font-family: "Montserrat";
+            opacity: 1; /* Firefox */
+        }
+        input[type="button"]
+        {
+            font-size: large;
+            font-family: "Oswald";
+            background-color: #000000; 
+            color: #ffffff; 
+            border: 10px solid black; 
+            padding: 5px;
+            width: 200px;
+        }
+        .center{
+            display: inline-block;
+            margin: auto;
+        }
+
+        /*---Page 9---*/
+        .page9{
+            background-color: #2c2c2c;
+            color: #ffffff;
+            margin: 80px 50px;
+        }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #2c2c2c;
+  color: #ffffff;
+  font-family: Montserrat;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: #2c2c2c;
+  text-align: left;
+  font-size: 3vh;
+}
+
+.item1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.item2 {
+  grid-column: 1;
+  grid-row: 2;
+  max-width: 600px;
+}
+
+.item3 {
+  grid-column: 1;
+  grid-row: 3;
+        display: flex;
+        justify-content: flex-start;
+}
+      .item3 div{
+        box-sizing: border-box;
+        height: 40px;
+        width: 40px;
+        background-color: #ffffff;
+        font-size: 20px;
+        text-align: center;
+        color: #2c2c2c;
+        padding: 5px;
+        margin: 5px;
+        margin-top: 30px;
+        border: 1px solid #ffffff;
+        border-radius: 100%;
+      }
+
+.item4 {
+  grid-column: 2;
+  grid-row: 1 / span 3;
+}
+
+.grid-table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: left;
+  font-size: 3vh;
+  grid-gap: 10px;
+  grid-column-gap: 20px;
+}
+
+.grid-table div .header {
+  padding: 10px;
+}
+
+.header{
+    font-family: Oswald;
+    font-size: 4vh;
+    font-weight: 100;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+    </style>
+</head>
+<body>
+    <!-- ---Page 1--- -->
+    <div class="page1">
+    <div class="main">
+        <div>
+            <img src="C:\Users\gurup\Downloads\technity-tech-main\technity-tech-main\TASK 2\Resources\Used Images\6.png" alt="image 6" style="height: 100px; width: 190px; padding-right: 400px; padding-left: 100px;">
+        </div>
+        
+        <div class="navbar">
+            <a href="#"><h1 style="font-weight: 500;">HOME</h1></a>
+            <a href="#"><h1 style="font-weight: 500;">PRODUCT</h1></a>
+            <a href="#"><h1 style="font-weight: 500;">PROMO</h1></a>
+            <a href="#"><h1 style="font-weight: 500;">ABOUT</h1></a>
+            <a href="#"><h1 style="font-weight: 500;">CONTACT</h1></a>
+        </div>
+        
+        <div>
+            <img src="C:\Users\gurup\Downloads\technity-tech-main\technity-tech-main\TASK 2\Resources\Used Images\7.png" alt="image 7" style="height: 40px; width: 40px; padding-left: 340px; padding-right: 100px;">
+        </div>
+    </div>
+
+    <div class="pg-1-center">
+    <h1 style="font-size: 12vh; padding-top: 30px; letter-spacing: 5px;">Title Here</h1>
+    <p style="font-size: 3vh;">Lorem ipsum dolor sit amet, consectetur<br>
+        adipiscing elit. Vivamus lacinia odio vitae<br>
+        vestibulum vestibulum.</p><br><br>
+    <button>REGISTER NOW</button>
+    </div>
+    </div>
+
+    <!-- ---Page 2--- -->
+    <div class="page2">
+        <h1 style="font-size: 8vh; padding-top: 30px;">DANCE TOUR</h1>
+        <p style="font-size: 3vh;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+        Vivamus lacinia odio vitae vestibulum vestibulum.</p><br>
+        <div class="Box1">
+            <div class="item1">
+                <img src="C:\Users\gurup\Downloads\technity-tech-main\technity-tech-main\TASK 2\Resources\Used Images\2.png" alt="image 2">
+                <h1>AMERICA</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elite</p>
+            </div>
+            <div class="item1">
+                <img src="C:\Users\gurup\Downloads\technity-tech-main\technity-tech-main\TASK 2\Resources\Used Images\3.png" alt="image 3">
+                <h1>ASIA</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elite</p>
+            </div>
+            <div class="item1">
+                <img src="C:\Users\gurup\Downloads\technity-tech-main\technity-tech-main\TASK 2\Resources\Used Images\4.png" alt="image 4">
+                <h1>AUSTRALIA</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elite</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ---Page 3--- -->
+    <div class="page3">
+        <h1 style="font-size: 8vh; padding-top: 40px;">PRICING</h1>
+        <p style="font-size: 3vh;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+        Vivamus lacinia odio vitae vestibulum vestibulum.</p><br>
+        <div class="Box2">
+            <div class="item2">
+                <br><br>
+                <img src="C:\Users\gurup\Downloads\technity-tech-main\technity-tech-main\TASK 2\Resources\Used Images\5.png" alt="image 5">
+                <h1>BASIC</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elite</p>
+                <button>$150.00</button>
+            </div>
+            <div class="item2">
+                <br><br>
+                <img src="C:\Users\gurup\Downloads\technity-tech-main\technity-tech-main\TASK 2\Resources\Used Images\5.png" alt="image 5">
+                <h1>PROFESSIONAL</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elite</p>
+                <button>$200.00</button>
+            </div>
+            <div class="item2">
+                <br><br>
+                <img src="C:\Users\gurup\Downloads\technity-tech-main\technity-tech-main\TASK 2\Resources\Used Images\5.png" alt="image 5">
+                <h1>ULTIMATE</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elite</p>
+                <button>$250.00</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---Page 4--- -->
+    <div class="page4">
+        <div>
+            <img src="C:\Users\gurup\Downloads\technity-tech-main\technity-tech-main\TASK 2\Resources\Used Images\3.png" alt="image 3" style="height: 100vh; width: 50%;">
+        </div>
+        <div class="text1">
+            <h1 style="font-size: 8vh; padding-top: 60px;">AMAZING DANCE</h1>
+            <p style="font-size: 3vh;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p><br>
+            <button>READ MORE</button>
+        </div>
+    </div>
+
+    <!-- ---Page 5--- -->
+    <div class="page4">
+        <div class="text1">
+            <h1 style="font-size: 8vh; padding-top: 60px;">BEST DANCE</h1>
+            <p style="font-size: 3vh;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p><br>
+            <button>READ MORE</button>
+        </div>
+        <div>
+            <img src="C:\Users\gurup\Downloads\technity-tech-main\technity-tech-main\TASK 2\Resources\Used Images\4.png" alt="image 4" style="height: 100vh; width: 50%;">
+        </div>
+    </div>
+
+    <!-- ---Page 6--- -->
+    <div class="page3">
+        <h1 style="font-size: 8vh; padding-top: 40px;">OUR STATISTICS</h1>
+        <p style="font-size: 3vh;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+        Vivamus lacinia odio vitae vestibulum vestibulum.</p><br><br><br>
+        <div class="Box2">
+            <div class="item">
+                <br><br>
+                <h1 style="font-size: 8vh;">1240+</h1>
+                <p style="font-size: 4vh;">Club</p>
+            </div>
+            <div class="item">
+                <br><br>
+                <h1 style="font-size: 8vh;">2000+</h1>
+                <p style="font-size: 4vh;">Active Member</p>
+            </div>
+            <div class="item">
+                <br><br>
+                <h1 style="font-size: 8vh;">1.000+</h1>
+                <p style="font-size: 4vh;">Community</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---Page 7--- -->
+    <div class="bg-image">
+        <div class="centered">
+            <p style="font-size: 4vh;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+            <h1 style="font-size: 8vh;">HERBERT SIMON</h1>
+        </div>
+    </div>
+
+    <!-- ---Page 8--- -->
+    <div class="page2" style="height: 60vh;">
+        <h1 style="font-size: 8vh; padding-top: 40px;">SUBSCRIBE</h1>
+        <p style="font-size: 3vh;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+        Vivamus lacinia odio vitae vestibulum vestibulum.</p><br>
+
+        <div class="center">
+        <form id="email" style="border-radius: 50%;">
+            <input type = 'email' placeholder='Your Email' style="background-color: #ffffff; color: #9397b2; border: 10px solid white; padding: 10px; width: 300px;">
+            <input type ="button" value="SUBSCRIBE">
+        </form>
+        </div>
+    </div>
+
+    <!-- ---Page 9--- -->
+    <div class="page9" style="height: 40vh;">
+        <div class="grid-container">
+            <div class="grid-item item1"><div class="header">MUSICOLOGY</div></div>
+            <div class="grid-item item2">Lorem ipsum dolor sit amet, consecte-<br>
+              tur adipiscing elit. Aliquam at dignis-<br>
+              sim nunc, id maximus ex. Etiam nec<br>
+              dignissim elit, at dignissim enim.</div>
+            <div class="grid-item item3">
+              <div><i class="fa fa-instagram" style="font-size: 30px; color: inherit"></i></div>
+              <div><i class="fa fa-facebook" style="font-size: 30px; color: inherit;"></i></div>
+              <div><i class="fa fa-twitter" style="font-size: 30px; color: inherit;"></i></div>
+              <div><i class="fa fa-whatsapp" style="font-size: 30px; color: inherit;"></i></div>
+          </div>  
+            <div class="grid-item item4">
+              <div class="grid-table">
+                <div><div class="header">ABOUT</div></div>
+                <div><div class="header">SERVICES</div></div>
+                <div><div class="header">OTHER</div></div>
+                <div>History</div>
+                <div>How to Order</div>
+                <div>Contact Us</div>
+                <div>Our Team</div>
+                <div>Our Product</div>
+                <div>Help</div>
+                <div>Brand Guidelines</div>
+                <div>Order Status</div>
+                <div>Privacy</div>
+                <div>Terms & Condition</div>
+                <div>Promo</div>
+                <div></div>
+                <div>Privacy Policy</div>
+                <div>Payment Method</div>
+              </div>
+            </div>
+          </div>
+          
+    </div>
+</body>
+</html>

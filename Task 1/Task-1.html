@@ -1,0 +1,203 @@
+<!-- Best at 100% screen size -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create.co</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    background-color: #e3f0ff;
+    /* Set the background image */
+    background-image: url("BASE.png");
+    background-repeat: no-repeat;
+    background-size: 930px 650px; /* Set the width and height in pixels */
+    background-position: 100% 100px;
+}
+
+li,
+a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 3% 6%;
+    height: 90px;
+    background-color: rgba(227, 241, 254, 255);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo {
+    margin-right: auto;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.nav-link {
+    list-style: none;
+    color: #e0a80e;
+}
+
+.nav-link li {
+    display: inline-block;
+    padding: 0 20px;
+    font-family: "Montserrat";
+}
+
+button {
+    padding: 15px 25px;
+    background: #5554b2;
+    color: #ffffff;
+    border: none;
+    font-family: "Montserrat";
+    border-radius: 5px;
+}
+
+    #half-text-half-image {
+        display : flex;
+        align-items : center;
+      }
+      .half-width-text {
+        width: 60%;
+        padding: 100px;
+        font-family: "Montserrat";
+        color: #9397b2;
+      }
+      .half-width-img {
+        width:40%;
+        min-height:100%;
+        position:fixed;
+        height:auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #orange{
+        color: #fa676d;
+      }
+      #email{
+        display : flex;
+        align-items : center;
+      }
+      ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #9397b2;
+        opacity: 1; /* Firefox */
+      }
+
+      /* Socil Media */
+      footer{
+        position: absolute;
+        bottom: -80px;
+        left: 100px;
+        display: flex;
+        justify-content: space-between;
+      }
+      footer div{
+        box-sizing: border-box;
+        height: 40px;
+        width: 40px;
+        background-color: #5554b2;
+        font-size: 20px;
+        text-align: center;
+        color: #ffffff;
+        padding: 5px;
+        margin: 10px;
+        border: 1px solid #5554b2;
+        border-radius: 5px;
+      }
+
+      .dot{
+        position: absolute;
+        bottom: -70px;
+        right: 100px;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .dot div{
+        box-sizing: border-box;
+        cursor: pointer;
+        /* float:right;*/
+        background-color: #ffffff;
+        margin-left: 10px;
+        padding: 7px;
+        border: 2px solid #ffffff;
+        border-radius: 100%;
+      }
+      #highlight{
+        outline: 3px solid #ffffff;
+        border-color: #e3f0ff;
+      }
+    </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <a class="logo" href="home.html"><h3 style="color: #2b2c62; font-size: 4vh; padding-right: 300px; font-weight: 900; font-family: Montserrat;">Create.co</h3></a>
+
+    <div class="nav">
+        <ul class="nav-link">
+            <li><a href="">Home</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Team</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="nav1">
+        <ul class="nav-link">
+            <li><a href="" style="padding-left: 100px;">Log in</a></li>
+            <li><a href="" target="_blank" rel="noopener noreferrer"><button>Getting Started</button></a></li>
+        </ul>
+    </div>
+</header><br><br><br><br>
+
+      <div id="half-text-half-image">
+      <div class="half-width-text">
+        <h1 style="font-size: 8vh; color:#2b2c62;">Grow Your Business With <b id="orange">Social Media Marketing</b></h1><br>
+        <p style="width: 65%; line-height: 1.8;">Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit, sed do eiusmod tempor <br>incididunt ut labore et dolore magna aliqua. Ut</p>  
+        <br>
+        <form id="email" style="border-radius: 50%;">
+          <input type = 'email' placeholder='Email Address' style="background-color: #ffffff; color: #9397b2; border: 0px none; padding: 20px; width: 40%; border-radius: 5px 0px 0px 5px;">
+          <input type ="button" value="Learn More" style="background-color: #5554b2; color: #ffffff; border: 0px none; padding: 20px; width: 33%; border-radius: 0px 5px 5px 0px;">
+        </form>
+      </div>
+      </div>
+<footer>
+  <div><i class="fa fa-instagram"></i></div>
+  <div><i class="fa fa-facebook"></i></div>
+  <div><i class="fa fa-twitter"></i></div>
+  <div><i class="fa fa-youtube-play"></i></div>
+  <div><i class="fa fa-whatsapp"></i></div>
+</footer>
+  <div1 class="dot">
+    <div></div>
+    <div id="highlight"></div>
+    <div></div>
+  </div1>
+</body>
+</html>

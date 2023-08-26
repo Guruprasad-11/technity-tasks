@@ -1,0 +1,84 @@
+body {
+  text-align: center;
+  background-color: #283149;
+  font-family: Tilt Prism;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #DBEDF3;
+  text-shadow: 3px 0 #DA0463;
+
+}
+
+.w:active {
+  border-color: rgb(202, 98, 98);
+  box-shadow: 0 0 10px rgb(202, 98, 98);
+}
+
+.a:active {
+  border-color: rgb(240, 203, 111);
+  box-shadow: 0 0 10px rgb(240, 203, 111);
+}
+
+.s:active {
+  border-color: rgb(131, 235, 161);
+  box-shadow: 0 0 10px rgb(131, 235, 161);
+}
+
+.d:active {
+  border-color: rgb(130, 246, 236);
+  box-shadow: 0 0 10px rgb(130, 246, 236);
+}
+
+.j:active {
+  border-color: rgb(187, 145, 224);
+  box-shadow: 0 0 10px rgb(187, 145, 224);
+}
+
+.k:active {
+  border-color: rgb(244, 139, 186);
+  box-shadow: 0 0 10px rgb(244, 139, 186);
+}
+
+.l:active {
+  border-color: rgb(247, 154, 91);
+  box-shadow: 0 0 10px rgb(247, 154, 91);
+}
+
+.set {
+  margin: 10% auto;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.drum {
+  font-family: Montserrat;
+  outline: none;
+  border: 10px solid #404B69;
+  font-size: 5rem;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  box-shadow: 0 0 10px white;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}

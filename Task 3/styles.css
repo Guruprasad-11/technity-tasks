@@ -1,0 +1,181 @@
+:root {
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: 'Poppins';
+  background-image: url(space.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+}
+
+.row {  
+  display: flex;
+  flex-direction: row;
+  padding: 2%;
+  flex-flow: row;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 50%;
+  padding: 20px;
+  margin-left: 20px;
+  
+}
+
+/* Main column */
+.main {
+  flex: 50%;
+  padding: 20px;  
+}
+
+.fakeimg {
+  width: 100%;
+  color: var(--white);
+  margin-top: 30%;
+  padding-left: 18%;
+}
+
+.sidebar{
+  background-color: var(--white);
+  width: 80%;
+  margin-top: 10%; 
+  border-radius: 8px;
+  padding: 25px; 
+  box-shadow: 1px 6px rgba(0,0,0,0.2);
+}
+
+
+.heading{
+  line-height: 1.2;
+  margin: 0;
+  font-size: 40px;
+}
+.para{
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.form {
+ padding: 0%;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+#Branch{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #6d6d6d;
+}
+
+.form-control input {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-family: 'Poppins';
+  border-color:lightgrey;
+  border-style: solid;
+  font-weight: bold;
+}
+
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #111010 !important;
+  color: #111010;
+ 
+}
+
+.form-control input:focus::placeholder {
+  color: transparent;
+}
+.form-control.success input {
+  border-color: var(--success-color);
+}
+
+.form-control.error input {
+  border-color: var(--error-color);
+  background-image: url(./alert.png);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  background-size: 30px;
+  color: var(--error-color);
+}
+
+.form-control small {
+  color: var(--error-color);
+  position: absolute;
+  font-size: 10px;
+  right:0;
+  bottom: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form button {
+  background-color: #04AA6D;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    padding: 12px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-family: 'Poppins';
+}
+
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 1%;
+    }
+  .fakeimg{
+    margin:0px;
+    padding: 0;
+  }
+  .sidebar,.para,.top-heading {   
+    width: fit-content; 
+  }
+  .top-heading{
+    text-align: center;
+    line-height: 1.6;
+  }
+  .heading{
+  font-size: 26px;
+  text-align: center;
+  line-height: 1.6;
+  }
+  .para{
+  text-align: center;
+
+  }
+  .side,.main{
+  margin-left:auto;
+  margin-right:auto;
+  }
+}
+
+
