@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    background-color: #e3f0ff;
+    /* Set the background image */
+    background-image: url("BASE.png");
+    background-repeat: no-repeat;
+    background-size: 930px 650px;
+    /* Set the width and height in pixels */
+    background-position: 100% 100px;
+}
+
+li,
+a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 3% 6%;
+    height: 90px;
+    background-color: rgba(227, 241, 254, 255);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo {
+    margin-right: auto;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.nav-link {
+    list-style: none;
+    color: #e0a80e;
+}
+
+.nav-link li {
+    display: inline-block;
+    padding: 0 20px;
+    font-family: "Montserrat";
+}
+
+button {
+    padding: 15px 25px;
+    background: #5554b2;
+    color: #ffffff;
+    border: none;
+    font-family: "Montserrat";
+    border-radius: 5px;
+}
+
+#half-text-half-image {
+    display: flex;
+    align-items: center;
+}
+
+.half-width-text {
+    width: 60%;
+    padding: 100px;
+    font-family: "Montserrat";
+    color: #9397b2;
+}
+
+.half-width-img {
+    width: 40%;
+    min-height: 100%;
+    position: fixed;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#orange {
+    color: #fa676d;
+}
+
+#email {
+    display: flex;
+    align-items: center;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #9397b2;
+    opacity: 1;
+    /* Firefox */
+}
+
+/* Socil Media */
+footer {
+    position: absolute;
+    bottom: -80px;
+    left: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div {
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+    background-color: #5554b2;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #5554b2;
+    border-radius: 5px;
+}
+
+.dot {
+    position: absolute;
+    bottom: -70px;
+    right: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dot div {
+    box-sizing: border-box;
+    cursor: pointer;
+    /* float:right;*/
+    background-color: #ffffff;
+    margin-left: 10px;
+    padding: 7px;
+    border: 2px solid #ffffff;
+    border-radius: 100%;
+}
+
+#highlight {
+    outline: 3px solid #ffffff;
+    border-color: #e3f0ff;
+}
