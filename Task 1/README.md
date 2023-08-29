@@ -6,7 +6,7 @@ This is a landing page created as part of Task 1 for the "Journey Through the Pa
 ## Page Preview
 Here's a preview of the landing page:
 
-![Landing Page Preview](/image.png)
+![Landing Page Preview](image.png)
 
 ## Task Details and Resources
 For more detailed information about the task requirements and the resources used, please visit the official task repository:
